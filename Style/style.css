@@ -1,0 +1,158 @@
+*{
+margin:0;
+padding: 0;
+}
+.cabecera{
+padding-top: 5px; /* espacio arriba */
+padding-bottom: 5px; /* espacio abajo */
+background-color:orange; /* aplico color al fondo de la cabecera*/
+top: 0; /*inicio posicion arriba del navegador */
+left: 0; /* inicio posicion a la izquierda del navegador */
+width: 100%; /* ancho de la cabecera */
+position: fixed; /* dejo fija la cabecera */
+}
+
+.cabecera .link-logo{
+vertical-align: middle; /* colocar el logo al centro de la cebecera */
+}
+
+.cabecera .link-logo .logo {
+width: 140px; /* ancho del logo  */
+height: 110px; /* alto del logo */ 
+padding-left: 30px;
+}  
+
+.cabecera .menu{
+display: inline-block; /* alinear todo el contenido de la cabecera al centro */ 
+margin-left: 35%; /* alinear el menu desde la izquierda  */                
+}
+
+.cabecera .menu a{
+font-family: 'Arimo', sans-serif;
+transition: all 0.5s ease;
+margin-left: 3px; /* espacio entre cada palabra desde la izquierda */ 
+margin-right: 9px; /* espacio entre cada palabra desde la derecha */
+color: white; /* color de fuente */
+font-size: 20px; /*  tamaño de la fuente*/
+font-weight: bold; /*  negrilla */ 
+text-transform: uppercase; /* convierto a mayuscula  */
+text-decoration: none; /* quitamos la linea debajo del texto */
+letter-spacing: 2px; /* espacio entre cada letra de la palabra */
+word-spacing: 6px; /* espacio entre cada palabra */
+border-radius: 10px; /* esquinas redondeadas */
+}
+.cabecera .menu a:hover{
+background-color: black; /* color de fondo al pasar el mouse por encima del texto */
+padding: 15px 10px; /* espacio entre el texto y el borde del menu */  
+color: orange;
+}
+
+/* aplicamos estilo a la seccion de #lacarta */
+
+h1{
+font-size: 4rem;
+text-transform: uppercase;
+font-weight: bold;
+color: black;
+background-color:rgb(239, 164, 24) ; /* color de fondo */
+text-align: center; /* alinear el texto al centro */
+}
+.carta{
+width: 100%;
+text-align: center;          
+}
+.carta a{
+font-size: 30px ;
+font-family: 'Arimo', sans-serif; /* tipo de letra */
+font-weight: bold; 
+text-decoration: none;         
+}
+
+.cartaimg{
+ text-align: center; /* alinear el texto al centro */
+ word-spacing: 30px;  
+}
+
+#lacarta{
+cursor: pointer; /* cuando para el cursos se convierta en una manito */           
+
+}
+p{
+font-family: 'Arimo', sans-serif; /* tipo de letra */
+font-size: 25px; /* tamaño de la fuente */     
+}
+
+.section{
+width: 100%;/* ancho de la seccion */
+height: 100vh; /* alto de la seccion */
+padding: 0px; /* espacio entre el borde y el contenido de la seccion */
+margin: 50px;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.ecard-container{
+display: flex; /* alinear el contenido de la seccion al centro */
+gap: 30px; /* espacio entre cada carta */
+flex-wrap: wrap; 
+justify-content: center;
+}
+.ecard{
+background-color: white;
+border-radius: 1rem; /* esquinas redondeadas */
+box-shadow:  0 4px 12px rgba(black, 0, 0, 0, 0.1 );
+width: 500px;
+height: 680px;
+overflow: hidden;   
+text-align: center; /* alinear el texto al centro */
+margin: 10px; 
+border: 2px solid #ccc; /* borde de la carta */ 
+transition: transform 0.3s ease, box-shadow 0.3s ease;   /* transicion al pasar el mouse por encima de la carta */
+
+}
+.ecard:hover{
+ transform: scale(1.03);
+ box-shadow: 0 0 20px rgba(black, 0, 0, 0.2); /* sombra al pasar el mouse por encima de la carta */
+ border: 5px solid black; /* borde de la carta al pasar el mouse por encima de la carta */
+}
+.ecard{
+margin: 10px;          
+}
+.ecard img{
+width: 100%; /* ancho de la imagen */
+height: auto; 
+display: block;         
+}
+
+.ecard-content{
+padding: 1rem;
+}
+
+.ecard h2{
+    margin: 0.5rem 0; /* espacio entre el texto y el borde de la carta */
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.ecard p{
+font-size: 1.25rem;
+color: rgb(137, 124, 124);
+margin-bottom: 1rem;
+
+}
+
+.ecard .carrito{
+width: 50%;
+height: 180px;
+border-radius: 1.5rem;
+cursor: pointer;
+transition: background-color 0.3s ;  
+text-align: center; /* alinear el texto al centro */
+margin-left: 120px; /* espacio entre el texto y el borde de la carta */
+
+}
+.ecard .carrito:hover{
+  background-color: #77808b;        
+}
+
